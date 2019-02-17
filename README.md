@@ -1,4 +1,4 @@
-#The Guardian API Profile
+# The Guardian API Profile
 
 **Author: Shuai Hao<br>
 Date: Feb. 2, 2019**
@@ -27,7 +27,7 @@ Five endpoints are available for visitors to begin their search.
 
 This article will focus on exploring the first three endpoints, because for **Edition** endpoint, visitors can only retrieve three URLs for The Guardian's UK/US/Australia homepage. As for the **Single item** endpoint, visitors need to get the article id (a specific path of the article), which can only be found through **Content** endpoint search. 
 
-##1) Authorization
+## 1) Authorization
  
 Visitors need to [apply for a key](https://open-platform.theguardian.com/access/) to access the API. Free developer key allows 12 calls per second and 5,000 keys per day. After typing in the name and email address, reasons for getting a key and click "register" button, The Guardian will send API key via email.
 
@@ -40,7 +40,7 @@ The Python file contains the following code:
     api_key = "API key goes here"
 ```
 
-##2) Parameter Explanation
+## 2) Parameter Explanation
 
 The Guardian's API provides a large number of query parameters for visitors to perform advanced search. All the parameters used in queries are listed here:
 
@@ -70,7 +70,7 @@ If the API returns no results, it means the website doesn't have tags or section
 
 More available parameters can be found on https://open-platform.theguardian.com/documentation/. 
 
-##3) JSON File Field Explanation
+## 3) JSON File Field Explanation
 
 JSON is a file format that are commonly used for data storage and can be viewed through web browser or notepad. [JSON viewer](https://github.com/tulios/json-viewer) is an useful extension for Chrome users to read the JSON file efficiently.
 
@@ -176,7 +176,7 @@ Part of the output JSON file looks like this:
 ```
 <br>
 
-##5) Query 2: Get a list of tags related to football club Liverpool
+## 5) Query 2: Get a list of tags related to football club Liverpool
 
 The Guardian's website has a strict data structure, and all articles are under certain section with more than 1,000 tags for visitors to search. With the following query, users can access tags containing keyword "liverpool" under the "football" section. Every page shows 10 articles and the first page is printed in the file.
 
@@ -251,7 +251,7 @@ The responses are printed to a JSON file called Guardian_data_query2.json. The o
 ```
 <br>
 
-##6) Query 3: Get a list of all sections in The Guardian
+## 6) Query 3: Get a list of all sections in The Guardian
 
 Articles are divided into 75 sections in The Guardian's website, but it is difficult for visitors to remember section names. The following query generates a list of all sections.
 
